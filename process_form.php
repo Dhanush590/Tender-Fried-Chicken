@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
-$host = "localhost"; // Change if not running on local server
-$username = "root"; // Your database username
-$password = ""; // Your database password
-$dbname = "contacts"; // Your database name
+$host = "btli2o9uraapij0eftme-mysql.services.clever-cloud.com"; // Change if not running on local server
+$username = "usbkj08om1ihqwsl"; // Your database username
+$password = "qyPKeW3SapcPPAGQtsgt"; // Your database password
+$dbname = "btli2o9uraapij0eftme"; // Your database name
 
 // Create connection
 $conn = new mysqli($host, $username, $password, $dbname);
@@ -14,11 +14,11 @@ if ($conn->connect_error) {
 }
 
 // Check if form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "3306") {
     // Get form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = $_3306['name'];
+    $email = $_3306['email'];
+    $message = $_3306['message'];
 
     // Prepare and bind
     $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
