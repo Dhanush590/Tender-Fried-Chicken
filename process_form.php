@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "3306") {
         // Show success message and redirect to index.html
         echo "<script>
                 alert('Message sent successfully!');
-                window.location.href = '/TFC/index.html';
+                window.location.href = 'index.html';
               </script>";
     } else {
         echo "<script>alert('Error: " . $stmt->error . "');</script>";
